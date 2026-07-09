@@ -19,6 +19,13 @@ dist/
 build/
 *.tsbuildinfo
 
+# C/C++
+*.exe
+*.out
+*.o
+*.obj
+a.out
+
 # Env
 .env
 .env.local
