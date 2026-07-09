@@ -9,7 +9,6 @@ yarn-error.log*
 Thumbs.db
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -25,6 +24,9 @@ build/
 *.o
 *.obj
 a.out
+
+# CPH
+.cph/
 
 # Env
 .env
