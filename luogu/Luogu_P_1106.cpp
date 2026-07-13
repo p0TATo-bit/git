@@ -33,16 +33,6 @@ int main() {
     cin >> k;
     int mark = 0;
     while(k > 0){
-      if(n[mark] == '0' && mark == 0 && n[mark] != n[mark + 1]){
-        n.erase(mark,1);
-        k--;
-      }else if(n[mark] == '0'){
-        mark++;
-      }else if(mark == n.size() - 1){
-        n.erase(mark,1);
-        k--;
-        break;
-      }
       if(n[mark] > n[mark + 1]){
         n.erase(mark,1);
         k--;
@@ -51,11 +41,9 @@ int main() {
         mark++;
       }
     }
-    for(int i = 0;i < n.size();i++){
-      if(n[i] != '0'){
-        cout << n[i];
-      }
-    }
+    int start = 0;
+    while (start < n.size() - 1 && n[start] == '0') start++;
+    cout << n.substr(start);
 
 
     return 0;
