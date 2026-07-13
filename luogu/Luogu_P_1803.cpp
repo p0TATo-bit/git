@@ -22,7 +22,7 @@ using namespace std;
 
 struct line{
     int l,r;
-}a[100005];
+}a[1000005];
 
 bool cmp(line x,line y){
     return x.r < y.r;
@@ -42,11 +42,11 @@ int main() {
     int ans = 1;
     int mark = 0;
     for(int i = 0;i < n - 1;i++){
-        if(a[mark].r > a[i].l){
+        if(a[mark].r > a[i+1].l){
             ans += 0;
         }else{
             ans++;
-            mark = i + 1;
+            mark = i+1;
         }
     }
     cout << ans << endl;
