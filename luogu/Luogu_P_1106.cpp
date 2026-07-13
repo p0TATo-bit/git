@@ -33,7 +33,7 @@ int main() {
     cin >> k;
     int mark = 0;
     while(k > 0){
-      if(n[mark] == '0' && mark == 0){
+      if(n[mark] == '0' && mark == 0 && n[mark] != n[mark + 1]){
         n.erase(mark,1);
         k--;
       }else if(n[mark] == '0'){
@@ -51,7 +51,11 @@ int main() {
         mark++;
       }
     }
-    cout << n << endl;
+    for(int i = 0;i < n.size();i++){
+      if(n[i] != '0'){
+        cout << n[i];
+      }
+    }
 
 
     return 0;
