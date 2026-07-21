@@ -1,34 +1,36 @@
-# 算法练习历程
+# 算法 & Java 学习历程
 
-记录日常刷题，持续更新 🚀
+记录日常刷题和 Java 学习，持续更新 🚀
 
 ## 目录结构
 
 ```
+├── luogu/       # 洛谷 题目 (C++)
 ├── leetcode/    # LeetCode 题目
 ├── niuke/       # 牛客网 题目
-├── luogu/       # 洛谷 题目
+├── java/        # Java 学习历程
+│   ├── basics/      # 基础语法
+│   ├── oop/         # 面向对象
+│   ├── collection/  # 集合框架
+│   ├── io/          # IO流
+│   ├── thread/      # 多线程
+│   └── project/     # 小项目
 └── README.md
 ```
 
 ## 进度
 
-| 平台 | 已刷 | 目标 |
-|------|------|------|
-| LeetCode | 0 | - |
-| 牛客 | 0 | - |
-| 洛谷 | 0 | - |
-
-## 题目命名
-
-每道题一个 `.cpp` 文件，命名格式：`题号-题目名.cpp`
-
-例如：`15-三数之和.cpp`、`206-反转链表.cpp`
+| 模块 | 已做 | 
+|------|------|
+| 洛谷 | 100+ 题 | 
+| LeetCode | 0 | 
+| 牛客 | 0 | 
+| Java | 开始中 | 
 
 ## 常用命令
 
 ```powershell
 git add -A
-git commit -m "feat: 完成 xxx 题"
+git commit -m "feat: 完成 xxx"
 git push
 ```
